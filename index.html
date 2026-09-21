@@ -35,7 +35,26 @@
 @media(max-width:1150px){.main{padding:26px 28px}.balance-block{grid-template-columns:1fr}.action-stack{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.dashboard-grid,.dashboard-bottom{grid-template-columns:1fr}.category-quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cards{grid-template-columns:repeat(2,1fr)}.two,.three{grid-template-columns:1fr}.filters{grid-template-columns:1fr 1fr 1fr}.filters .wide{grid-column:1/-1}}
 @media(max-width:780px){.app{display:block}.sidebar{position:relative;width:100%;height:auto;padding:12px}.nav{flex-direction:row;overflow:auto}.nav button{white-space:nowrap;width:auto}.sidebar-bottom{display:none}.main{padding:20px 14px 40px}.topbar{display:grid}.headline h1{font-size:25px}.stat-row{grid-template-columns:1fr 1fr}.stat-item:nth-child(2){border-right:0}.stat-item:nth-child(n+3){border-top:1px solid var(--line)}.action-stack{grid-template-columns:1fr}.category-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.budget-item{grid-template-columns:100px 1fr auto}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.filters{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.cards{grid-template-columns:1fr}.balance-main{font-size:37px}.stat-row{grid-template-columns:1fr}.stat-item{border-right:0!important;border-top:1px solid var(--line)}.stat-item:first-child{border-top:0}.category-quick-grid{grid-template-columns:1fr}.budget-item{grid-template-columns:1fr}.budget-meta{text-align:left}}
-</style>
+/* Correction taille des fenêtres sur mobile / Safari */
+.modal-backdrop {
+  padding: 12px !important;
+  align-items: center !important;
+}
+
+.modal-backdrop .modal {
+  max-height: 85vh !important;
+  max-width: 92vw !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 600px) {
+  .modal-backdrop .modal {
+    width: 92vw !important;
+    max-height: 82vh !important;
+    border-radius: 16px !important;
+  }
+}</style>
 </head>
 <body>
 <div class="app">
